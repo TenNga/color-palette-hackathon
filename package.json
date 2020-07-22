@@ -1,5 +1,6 @@
 {
   "name": "color-palette-hackathon",
+  "homepage":"https://colorpalette.kevinkarma.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +11,8 @@
     "react-dom": "^16.13.1",
     "react-images-upload": "^1.2.8",
     "react-palette": "^1.0.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
