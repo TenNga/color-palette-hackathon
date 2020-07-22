@@ -5,13 +5,17 @@
 ## Features:
 
 - Upload image
+- Generators Color Automatically
 - Click color to copy
 
 # Library Used:
 
-- https://www.npmjs.com/package/react-images-upload
-- https://www.npmjs.com/package/react-palette
+- [Image Upload](https://www.npmjs.com/package/react-images-upload)
+- [React Palette](https://www.npmjs.com/package/react-palette)
 
 # Author
-- Kevin Karma
+- [Kevin Karma](https://github.com/TenNga)
 
+## screenshot
+
+![](demo.jpg)
