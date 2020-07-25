@@ -9,6 +9,7 @@ import './App.css';
 const App = () => {
 
   const [pictures, setPicture] = useState([]);
+  const [click, setClick] = useState(false);
 
   const AppContainer = styled.div`
     margin: 0 2rem;
@@ -37,19 +38,29 @@ const App = () => {
   `;
 
   //execute everytime image upload
-  const onDrop = (picture) => setPicture([...picture]);
+  const onDrop = (picture) => {
+    setPicture([...picture]);
+    setClick(false);
+  };
 
   const colorClicked = (e) => {
+    setClick(true);
     const text = e.target.textContent;
     const textholder = document.createElement('textarea');
     textholder.value = text;
     document.body.appendChild(textholder);
     textholder.select();
     document.execCommand('copy');
-    alert("Copied the text: " + textholder.value);
+    // alert("Copied the text: " + textholder.value);
     document.body.removeChild(textholder);
-    
   }
+  const StatusDisplay = styled.div`
+    background-color:rgb(128, 128, 128, 0.5);
+    color: black;
+    text-align: center;
+    margin-top:2rem;
+    font-weight: bolder;
+  `;
   const fileStyled = {
     backgroundColor: "#42bec9"
   }
@@ -65,6 +76,12 @@ const App = () => {
           pictures.length > 0?
           <Palette src={URL.createObjectURL(pictures[pictures.length-1])}>
             {(palette) => (
+              <>
+              {click?
+              <StatusDisplay>
+                  Copied to Clipboard
+                </StatusDisplay> : null }
+
               <PaletteContainer>
                 <SingleColor onClick={colorClicked} style={{ backgroundColor: palette.data.vibrant}}>
                   {palette.data.vibrant}
@@ -79,7 +96,7 @@ const App = () => {
                   {palette.data.darkMuted}
                 </SingleColor>
               </PaletteContainer>
-            
+            </>
             )}
           </Palette> : null
         }  
