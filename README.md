@@ -24,8 +24,19 @@ Mintbean Hackathon: Color Palette
 - [Image Upload](https://www.npmjs.com/package/react-images-upload)
 - [React Palette](https://www.npmjs.com/package/react-palette)
 
+# Built With
+
+- Visual Studio Code
+- React 
+- npm
+
 # Author
 - [Kevin Karma](https://github.com/TenNga)
+
+# Acknowledgments
+
+- creator of React, React-palette, image-upload
+- Inspiration got from this [site](https://www.canva.com/colors/color-palette-generator).
 
 ## screenshot
 
