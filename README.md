@@ -40,4 +40,4 @@ Mintbean Hackathon: Color Palette
 
 ## screenshot
 
-![](/demo.jpg)
+![](/public/demo.JPG)
