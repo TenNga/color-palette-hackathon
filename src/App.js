@@ -54,6 +54,7 @@ const App = () => {
     // alert("Copied the text: " + textholder.value);
     document.body.removeChild(textholder);
   }
+
   const StatusDisplay = styled.div`
     background-color:rgb(128, 128, 128, 0.5);
     color: black;
@@ -61,6 +62,7 @@ const App = () => {
     margin-top:2rem;
     font-weight: bolder;
   `;
+
   const fileStyled = {
     backgroundColor: "#42bec9"
   }
