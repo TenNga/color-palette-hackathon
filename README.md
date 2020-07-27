@@ -16,8 +16,8 @@ Mintbean Hackathon: Color Palette
 ## Features:
 
 - Upload image
-- Generators Color Automatically
-- Click color to copy
+- Generates Color Automatically
+- Click on color to copy
 
 # Library Used:
 
